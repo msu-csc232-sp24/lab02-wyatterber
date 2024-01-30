@@ -60,15 +60,15 @@ using std::setw;
  */
 namespace csc232
 {
-    // Add any user-defined functions prescribed in your assignment below
-    // TODO: 1.1 Declare the Shape interface below
+
+
 class Shape {
     public:
         virtual double area() const = 0;
         virtual double perimeter() const = 0;
         virtual ~Shape() = default;
     };
-    // TODO: 2.1 Provide an inline definition of the Square class below
+
 class Square : public Shape{
     public:
         Square() : side{1.0}{}
@@ -79,7 +79,7 @@ class Square : public Shape{
     private:
         double side = 1.0;
     };
-    // TODO: 3.1 Provide an inline definition of the Circle class below
+
 class Circle : public Shape{
     public:
         double radius = 1.0;
@@ -87,7 +87,7 @@ class Circle : public Shape{
             double area() const {return (radius * radius) * M_PI;}
             ~Circle() = default;
     };
-    // DO NOT Modify anything below this line
+// DO NOT Modify anything below this line
 } // namespace csc232
 
 #endif // CSC232_COMMON_H_
